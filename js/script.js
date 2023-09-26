@@ -47,6 +47,8 @@ function addItem(e) {
 
   taskContainer.appendChild(item);
 
+  input.value = '';
+
   edit_item.addEventListener('click', (e) => {
     if (edit_item.innerText.toLowerCase() == 'edit') {
       edit_item.innerText = "Save";
